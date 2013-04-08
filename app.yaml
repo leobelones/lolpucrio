@@ -23,6 +23,8 @@ handlers:
   script: cadastro.app
 - url: /bd
   script: cadastro.app
+- url: /forum
+  script: forum.app
 - url: /
   script: index.app
 - url: /.*
