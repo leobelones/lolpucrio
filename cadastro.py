@@ -125,7 +125,6 @@ class cadastro(webapp2.RequestHandler):
 		      	<label class="checkbox inline"><input type="checkbox" name="5x5 Ranked" value="5x5 Ranked">5x5 Ranked  </label><br>
 		      	
 		      	<label class="checkbox inline"><input type="checkbox" name="Dominion Normal" value="Dominion Normal">Dominion Normal  </label>
-		        <label class="checkbox inline"><input type="checkbox" name="Dominion Ranked" value="Dominion Ranked">Dominion Ranked  </label><br>
 		        <label class="checkbox inline"><input type="checkbox" name="ARAM" value="ARAM">ARAM  </label><br>
 		        </label>
 		      	
@@ -154,7 +153,6 @@ class Usuario(db.Model):
 	Normal5 = db.StringProperty() 
 	Ranked5 = db.StringProperty() 
 	Normald = db.StringProperty()
-	Rankedd = db.StringProperty()
 	ARAM = db.StringProperty()
 
 
@@ -176,7 +174,6 @@ class bd(webapp2.RequestHandler):
 		usr.Normal5  = self.request.get("5x5 Normal") 
 		usr.Ranked5  = self.request.get("5x5 Ranked") 
 		usr.Normald  = self.request.get("Dominion Normal")
-		usr.Rankedd  = self.request.get("Dominion Ranked") 
 		usr.ARAM  = self.request.get("ARAM")
 		usr.put()
 
@@ -186,7 +183,7 @@ class bd(webapp2.RequestHandler):
 		self.response.out.write(inicio + "<h1>O seguinte usuario foi incluido no sistema:</h1><br><p class=\"lead\"> ")
 		cad = self.request.get("nomerl") + " " + self.request.get("nomelol") + " " + self.request.get("lvl") + " " + self.request.get("liga") + " " + self.request.get("tier")
 		role = self.request.get("Top") + " " + self.request.get("Mid") + " " + self.request.get("ADC") + " " + self.request.get("Support") + " " + self.request.get("Jungler")
-		part = self.request.get("3x3 Normal") + " " + self.request.get("3x3 Ranked") + " " + self.request.get("5x5 Normal") + " " + self.request.get("5x5 Ranked") + " " + self.request.get("Dominion Normal")+ " " + self.request.get("Dominion Ranked") + " " + self.request.get("ARAM")
+		part = self.request.get("3x3 Normal") + " " + self.request.get("3x3 Ranked") + " " + self.request.get("5x5 Normal") + " " + self.request.get("5x5 Ranked") + " " + self.request.get("Dominion Normal")+ " " + self.request.get("ARAM")
 		self.response.out.write(cad + "<br>")
 		self.response.out.write(role + "<br>")
 		self.response.out.write(part + "<br>")

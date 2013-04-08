@@ -20,7 +20,6 @@ class Usuario(db.Model):
 	Normal5 = db.StringProperty() 
 	Ranked5 = db.StringProperty() 
 	Normald = db.StringProperty()
-	Rankedd = db.StringProperty()
 	ARAM = db.StringProperty()
 
 incio = """
@@ -98,8 +97,8 @@ class membros(webapp2.RequestHandler):
 			t += "<td>" + str(usr.lvl) + "</td>"  
 			t += "<td>" + str(usr.liga) + "</td>"  
 			t += "<td>" + str(usr.tier) + "</td>"  
-			t += "<td>" + str(usr.Top) + " " + str(usr.Mid) + " " + str(usr.ADC) + " " + str(usr.Support ) + " " + str(usr.Jungler) + "</td>" 
-			t += "<td>" + str(usr.Normal3) + " " + str(usr.Ranked3) + " " + str(usr.Normal5) + " " + str(usr.Ranked5) + str(usr.Normald) + " " + str(usr.Rankedd) + " " + str(usr.ARAM) + "</td>"  
+			t += "<td>" + str(usr.Top) + "<br>" + str(usr.Mid) + "<br>" + str(usr.ADC) + "<br>" + str(usr.Support ) + "<br>" + str(usr.Jungler) + "</td>" 
+			t += "<td>" + str(usr.Normal3) + "<br>" + str(usr.Ranked3) + "<br>" + str(usr.Normal5) + "<br>" + str(usr.Ranked5) + str(usr.Normald) + "<br>" + str(usr.ARAM) + "</td>"  
 			t += "</tr>"
 			tat = tat + " " + t 
 
