@@ -17,7 +17,7 @@
 				          <a class="brand" href="index">LoL Puc-Rio</a>
 				          <div class="nav-collapse collapse">
 				            <ul class="nav">
-				              <li class="active"><a href="index">Inicio</a></li>
+				              <li><a href="index">Inicio</a></li>
 				              <li><a href="cadastro">Cadastro</a></li>
 				              <li><a href="membros">Membros</a></li>
 				              <li><a href="contato">Contato</a></li>
