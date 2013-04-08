@@ -1,0 +1,34 @@
+application: lolpucrio
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /css
+  static_dir: css
+
+- url: /index
+  script: index.app
+- url: /contato
+  script: contato.app
+- url: /membros
+  script: membros.app
+- url: /cadastro
+  script: cadastro.app
+- url: /bd
+  script: cadastro.app
+- url: /
+  script: index.app
+- url: /.*
+  script: notfound.app
+
+
+libraries:
+- name: webapp2
+  version: "2.5.1"
