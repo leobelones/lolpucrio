@@ -67,7 +67,7 @@ class index(webapp2.RequestHandler):
     <h1>N&atildeo tem conta?</h1>
 	<p class="lead">N&atildeo seja por isso, cadastre-se agora!</p>
 	<a class="btn btn-large btn-success" href="cadastro">Cadastro</a>
-	<p class="lead"><br>Sugest&otildees,<br>
+	<p class="lead"><br>Site para os jogadores de League of Legends da PUC-Rio!<br><br>Em breve: <br> -Montaremos equipes<br>-Organizaremos torneios<br><br><br>Sugest&otildees,<br>
 					Cr&iacuteticas,<br>
 					Quer me ajudar?
 					</p>
